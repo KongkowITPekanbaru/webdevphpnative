@@ -2,7 +2,7 @@
 
 $host= "localhost";
 $dbname = "webdev";
-$dbuser = "roodst";
+$dbuser = "root";
 $dbpassword = "";
 
 try{

@@ -25,9 +25,8 @@ try{
 	// $query->execute();
 
 	$query =$conn->query($sql);
-	echo "$sql";
 	echo "
-	<script> 
+	<script>
 	alert('Sukses');
 	window.location.href = 'realform.php';
 
@@ -36,7 +35,7 @@ try{
 
 	";
 	// header('location:realform.php');
-	
+
 
 }catch(Exception $ex){
 	echo "ERROR !!!   " . $ex->getMessage();
@@ -44,6 +43,5 @@ try{
 }
 
 
-	
-}
 
+}

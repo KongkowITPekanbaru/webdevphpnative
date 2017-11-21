@@ -2,13 +2,13 @@
 
 $host= "localhost";
 $dbname = "webdev";
-$dbuser = "roodst";
+$dbuser = "root";
 $dbpassword = "";
 
 try{
 	$conn = new PDO("mysql:host=$host;dbname=$dbname",$dbuser,$dbpassword);
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}catch(Exception $ex){
-	echo "Koneksi Error";
+}catch(PDOException $ex){
+	echo "Koneksi Error <br>";
     echo $ex->getMessage();
 }
